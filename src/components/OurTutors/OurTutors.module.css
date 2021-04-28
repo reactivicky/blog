@@ -1,0 +1,135 @@
+.OurTutors {
+	padding: 100px 60px;
+}
+
+.HeadingContainer {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.Heading {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.HeadingText {
+	font-family: 'AvenirLight', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.FilterSortContainer,
+.FilterContainer,
+.SortContainer {
+	display: flex;
+	align-items: center;
+}
+
+.FilterSortContainer {
+	margin-bottom: 40px;
+}
+
+.FilterContainer p,
+.SortContainer p {
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.FilterContainer select,
+.SortContainer button {
+	font-size: 12px;
+	background-color: #d9d9d9;
+	border: 1px solid #bdbdbd;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.FilterContainer select {
+	border-radius: 5px;
+	width: auto;
+	height: 30px;
+}
+
+.SortContainer button:first-of-type {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.SortContainer button:last-of-type {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.FilterContainer {
+	margin-right: 40px;
+	flex-wrap: wrap;
+}
+
+.Active {
+	background-color: #009c38 !important;
+	color: white;
+	border: 1px solid #009c38;
+}
+
+hr {
+	border: 1px solid #efefef;
+}
+
+.CardContainer {
+	margin: 30px auto 50px auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-between;
+	grid-template-rows: auto;
+	grid-gap: 40px;
+}
+
+.SeeAllTutorsBtnContainer {
+	text-align: center;
+}
+
+.SeeAllTutorsBtn {
+	font-size: 1rem;
+	background-color: #dadada;
+	padding: 16px 30px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+@media (max-width: 700px) {
+	.FilterSortContainer {
+		flex-direction: column;
+	}
+
+	.FilterContainer {
+		margin-bottom: 20px;
+	}
+
+	.CardContainer {
+		grid-template-columns: auto;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+	.CardContainer {
+		grid-template-columns: auto auto;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+	.CardContainer {
+		grid-template-columns: auto auto auto;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1301px) and (max-width: 1600px) {
+	.CardContainer {
+		grid-template-columns: auto auto auto auto;
+		justify-content: center;
+	}
+}
